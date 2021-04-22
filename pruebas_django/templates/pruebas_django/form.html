@@ -1,0 +1,12 @@
+{% extends 'layout/base.html' %}
+{% block 'title' %}
+    Form
+{% endblock 'title'%}
+{% block 'content' %}
+    <h1>TodoForm with form.py !!</h1>
+    <form action="/test/form/" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+{% endblock 'content' %}

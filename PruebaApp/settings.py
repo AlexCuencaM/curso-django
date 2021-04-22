@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'PruebaApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',#Nombre de la bd
-        'USER': '',#root
-        'PASSWORD': '',#cnodnc
+        'NAME': 'prueba_django',#Nombre de la bd
+        'USER': 'alex',#root
+        'PASSWORD': 'test',#cnodnc
         'HOST': 'localhost',
         'PORT': '5432',
     }

@@ -6,4 +6,26 @@
 {% block 'content' %}
     <h1>Hola mundooooo desde el template!!</h1>
     <h2>Soy una pag</h2>
+    <h3>Mis credenciales</h3>
+    
+    <p>Username: {{mis_credenciales.username}}</p>
+    <p>Email:{{mis_credenciales.email}} </p>
+    <p>Password:{{mis_credenciales.password}} </p>
+    
+    <h5>Mi caballo se llama {{caballo}}</h5>
+    <hr/>
+    {% for mensaje in mensajes %}
+        <p>Mensaje: {{mensaje}}</p>
+    {% endfor %}
+    <h1>Lista de Todo</h1>
+
+    {% if todos %}
+        {% for todo in todos %}
+            <p>Descripcion: {{todo.descripcion}}</p>
+            <p>Is done: {{todo.done}}</p>
+            <hr/>
+
+        {% endfor %} 
+    {% endif %}
+
 {% endblock 'content' %}
